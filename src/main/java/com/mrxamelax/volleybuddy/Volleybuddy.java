@@ -11,7 +11,7 @@ import reactor.core.publisher.Mono;
 public class Volleybuddy {
 
     public static void main(String[] args) {
-        
+        DiscordClient client = DiscordClient.create("MTMyNDg2MDgyNTkxMDkwMjkyNg.G2DfGG.9LiAg4uzCIuWK2ZpjDPWn0cdjp7vOL-z09T7ko");
 
         Mono<Void> login = client.withGateway((GatewayDiscordClient gateway) ->
                 gateway.on(MessageCreateEvent.class, event -> {
